@@ -1,0 +1,26 @@
+"""
+Project configuration and directory paths.
+"""
+from pathlib import Path
+import os
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_DIR = PROJECT_ROOT / "data"
+RAW_DATA_DIR = DATA_DIR / "raw"
+PROCESSED_DATA_DIR = DATA_DIR / "processed"
+MODELS_DIR = PROJECT_ROOT / "models"
+REPORTS_DIR = PROJECT_ROOT / "reports"
+NOTEBOOKS_DIR = PROJECT_ROOT / "notebooks"
+ASSETS_DIR = PROJECT_ROOT / "assets"
+ASSETS_MODELS_DIR = ASSETS_DIR / "models"
+ASSETS_ERROR_ANALYSIS_DIR = ASSETS_MODELS_DIR / "error_analysis"
+
+RAW_DATA_FILE_NAME = "Sample - Superstore.csv"
+RAW_DATA_FILE = RAW_DATA_DIR / RAW_DATA_FILE_NAME
+
+PROCESSED_DATA_FILE_NAME = "superstore_cleaned.csv"
+PROCESSED_DATA_FILE = PROCESSED_DATA_DIR / PROCESSED_DATA_FILE_NAME
+
+FORECASTING_FEATURES_FILE_NAME = "forecasting_features.csv"
+FORECASTING_FEATURES_FILE = PROCESSED_DATA_DIR / FORECASTING_FEATURES_FILE_NAME

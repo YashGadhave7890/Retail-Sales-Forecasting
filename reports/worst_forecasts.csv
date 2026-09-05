@@ -1,0 +1,11 @@
+Date,Actual,Predicted,Residual,Absolute_Error,APE (%),Month,Quarter,Week,Sales_Tier,Error_Direction
+2017-11-19,35344.42,19618.78,15725.64,15725.64,44.49,11,4,46,High (>75th pct),Underpredicted (Peak Miss)
+2017-10-01,8921.37,22732.82,-13811.45,13811.45,154.81,10,4,39,Normal (25th-75th pct),Overpredicted (Trough Miss)
+2017-12-17,10495.96,24218.33,-13722.36,13722.36,130.74,12,4,50,Normal (25th-75th pct),Overpredicted (Trough Miss)
+2017-11-05,31325.57,18062.32,13263.26,13263.26,42.34,11,4,44,High (>75th pct),Underpredicted (Peak Miss)
+2017-12-31,8977.83,20849.17,-11871.34,11871.34,132.23,12,4,52,Normal (25th-75th pct),Overpredicted (Trough Miss)
+2017-10-29,6423.35,17226.65,-10803.3,10803.3,168.19,10,4,43,Low (<25th pct),Overpredicted (Trough Miss)
+2017-10-22,27411.76,16957.13,10454.63,10454.63,38.14,10,4,42,High (>75th pct),Underpredicted (Peak Miss)
+2017-12-03,32354.57,22537.88,9816.69,9816.69,30.34,12,4,48,High (>75th pct),Underpredicted (Peak Miss)
+2017-03-12,6078.67,15834.75,-9756.08,9756.08,160.5,3,1,10,Low (<25th pct),Overpredicted (Trough Miss)
+2017-03-26,27125.48,17626.14,9499.34,9499.34,35.02,3,1,12,High (>75th pct),Underpredicted (Peak Miss)

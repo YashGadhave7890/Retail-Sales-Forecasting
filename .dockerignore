@@ -1,0 +1,45 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Test & coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Version control & configuration
+.git/
+.gitignore
+.gitattributes
+
+# Environment secrets & local config
+.env
+.env.*
+!.env.example
+
+# Development scratch files
+scratch/
+*.tmp
+*.log
+
+# Raw immutable data (container dashboard uses data/processed/)
+data/raw/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/
+
+# Test suites (not needed in production image)
+tests/
+
+# System / IDE generated files
+.system_generated/
+.idea/
+.vscode/

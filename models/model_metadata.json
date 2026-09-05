@@ -1,0 +1,70 @@
+{
+  "model_name": "Ridge Regression (StandardScaler + L2 Regularization)",
+  "model_artifact": "models/final_model.joblib",
+  "model_purpose": "Production Forecasting Artifact (Trained on complete history)",
+  "evaluation_model_artifact": "models/ridge_regression.joblib",
+  "evaluation_purpose": "Unbiased Evaluation Artifact (Trained strictly on 2015-2016)",
+  "training_data_period": "2015-01-04 to 2017-12-31",
+  "total_training_observations": 157,
+  "target_variable": "Sales (Weekly aggregated USD revenue)",
+  "frequency": "weekly (W-SUN: Sunday week-ending)",
+  "forecast_horizon": "1-step-ahead weekly point forecast (h=1)",
+  "hyperparameters": {
+    "alpha": 10.0,
+    "scaler": "StandardScaler",
+    "random_state": 42
+  },
+  "feature_count": 26,
+  "feature_list": [
+    "year",
+    "quarter",
+    "month",
+    "week_of_year",
+    "is_q4",
+    "sin_week",
+    "cos_week",
+    "sin_month",
+    "cos_month",
+    "sales_lag_1",
+    "sales_lag_2",
+    "sales_lag_3",
+    "sales_lag_4",
+    "sales_lag_8",
+    "sales_lag_12",
+    "sales_lag_52",
+    "sales_rolling_mean_4",
+    "sales_rolling_std_4",
+    "sales_rolling_min_4",
+    "sales_rolling_max_4",
+    "sales_rolling_mean_12",
+    "sales_rolling_std_12",
+    "orders_lag_1",
+    "quantity_lag_1",
+    "profit_lag_1",
+    "avg_discount_lag_1"
+  ],
+  "scikit_learn_version": "1.9.0",
+  "creation_timestamp_utc": "2026-09-05T14:06:01.308802+00:00",
+  "unbiased_holdout_evaluation_metrics_2017": {
+    "eval_period": "2017-01-01 to 2017-12-31 (53 weeks)",
+    "MAE": 5377.97,
+    "RMSE": 6778.95,
+    "WAPE_percent": 38.58,
+    "MAPE_percent": 56.84,
+    "beats_naive_persistence": true,
+    "beats_seasonal_naive": true
+  },
+  "expanding_backtesting_summary_metrics": {
+    "mean_MAE": 5130.83,
+    "mean_RMSE": 6554.35,
+    "mean_WAPE_percent": 48.6,
+    "std_MAE": 1684.12
+  },
+  "known_limitations": [
+    "Point forecast output only (no automated confidence intervals)",
+    "Supervised 1-step-ahead formulation (direct multi-step recursive rollouts not implemented)",
+    "Systematic underprediction during extreme holiday demand spikes (>75th percentile sales)",
+    "Systematic overprediction during post-holiday slumps (<25th percentile sales)",
+    "Absence of external promotional marketing calendars, stockout records, and macroeconomic variables"
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "project": "Retail Sales Forecasting & Analytics",
+  "dataset": "superstore_cleaned.csv",
+  "dataset_dimensions": {
+    "rows": 9993,
+    "columns": 23,
+    "date_range": {
+      "min_order_date": "2014-01-03",
+      "max_order_date": "2017-12-30",
+      "total_calendar_days": 1457,
+      "unique_order_dates": 1237
+    }
+  },
+  "core_kpis": {
+    "total_sales": 2296919.49,
+    "total_profit": 286409.08,
+    "total_quantity": 37871,
+    "num_orders": 5009,
+    "num_customers": 793,
+    "num_products": 1862,
+    "average_order_value": 458.56,
+    "average_profit_per_order": 57.18,
+    "overall_profit_margin_pct": 12.47
+  },
+  "yearly_metrics": {
+    "2014": {
+      "sales": 483966.13,
+      "profit": 49556.03,
+      "orders": 969,
+      "quantity": 7579,
+      "profit_margin_pct": 10.24
+    },
+    "2015": {
+      "sales": 470532.51,
+      "profit": 61618.6,
+      "orders": 1038,
+      "quantity": 7979,
+      "profit_margin_pct": 13.1
+    },
+    "2016": {
+      "sales": 609205.6,
+      "profit": 81795.17,
+      "orders": 1315,
+      "quantity": 9837,
+      "profit_margin_pct": 13.43
+    },
+    "2017": {
+      "sales": 733215.26,
+      "profit": 93439.27,
+      "orders": 1687,
+      "quantity": 12476,
+      "profit_margin_pct": 12.74
+    }
+  },
+  "category_metrics": {
+    "Technology": {
+      "sales": 836154.03,
+      "profit": 145454.95,
+      "quantity": 6939,
+      "orders": 1544,
+      "sales_share_pct": 36.4,
+      "profit_margin_pct": 17.4
+    },
+    "Furniture": {
+      "sales": 741718.42,
+      "profit": 18463.33,
+      "quantity": 8026,
+      "orders": 1764,
+      "sales_share_pct": 32.29,
+      "profit_margin_pct": 2.49
+    },
+    "Office Supplies": {
+      "sales": 719047.03,
+      "profit": 122490.8,
+      "quantity": 22906,
+      "orders": 3742,
+      "sales_share_pct": 31.3,
+      "profit_margin_pct": 17.04
+    }
+  },
+  "subcategory_metrics": {
+    "Copiers": {
+      "category": "Technology",
+      "sales": 149528.03,
+      "profit": 55617.82,
+      "quantity": 234,
+      "avg_discount_pct": 16.18,
+      "profit_margin_pct": 37.2
+    },
+    "Phones": {
+      "category": "Technology",
+      "sales": 330007.05,
+      "profit": 44515.73,
+      "quantity": 3289,
+      "avg_discount_pct": 15.46,
+      "profit_margin_pct": 13.49
+    },
+    "Accessories": {
+      "category": "Technology",
+      "sales": 167380.32,
+      "profit": 41936.64,
+      "quantity": 2976,
+      "avg_discount_pct": 7.85,
+      "profit_margin_pct": 25.05
+    },
+    "Paper": {
+      "category": "Office Supplies",
+      "sales": 78479.21,
+      "profit": 34053.57,
+      "quantity": 5178,
+      "avg_discount_pct": 7.49,
+      "profit_margin_pct": 43.39
+    },
+    "Binders": {
+      "category": "Office Supplies",
+      "sales": 203412.73,
+      "profit": 30221.76,
+      "quantity": 5974,
+      "avg_discount_pct": 37.23,
+      "profit_margin_pct": 14.86
+    },
+    "Chairs": {
+      "category": "Furniture",
+      "sales": 328167.73,
+      "profit": 26602.23,
+      "quantity": 2354,
+      "avg_discount_pct": 17.0,
+      "profit_margin_pct": 8.11
+    },
+    "Storage": {
+      "category": "Office Supplies",
+      "sales": 223843.61,
+      "profit": 21278.83,
+      "quantity": 3158,
+      "avg_discount_pct": 7.47,
+      "profit_margin_pct": 9.51
+    },
+    "Appliances": {
+      "category": "Office Supplies",
+      "sales": 107532.16,
+      "profit": 18138.01,
+      "quantity": 1729,
+      "avg_discount_pct": 16.65,
+      "profit_margin_pct": 16.87
+    },
+    "Furnishings": {
+      "category": "Furniture",
+      "sales": 91705.16,
+      "profit": 13059.14,
+      "quantity": 3563,
+      "avg_discount_pct": 13.83,
+      "profit_margin_pct": 14.24
+    },
+    "Envelopes": {
+      "category": "Office Supplies",
+      "sales": 16476.4,
+      "profit": 6964.18,
+      "quantity": 906,
+      "avg_discount_pct": 8.03,
+      "profit_margin_pct": 42.27
+    },
+    "Art": {
+      "category": "Office Supplies",
+      "sales": 27118.79,
+      "profit": 6527.79,
+      "quantity": 3000,
+      "avg_discount_pct": 7.49,
+      "profit_margin_pct": 24.07
+    },
+    "Labels": {
+      "category": "Office Supplies",
+      "sales": 12486.31,
+      "profit": 5546.25,
+      "quantity": 1400,
+      "avg_discount_pct": 6.87,
+      "profit_margin_pct": 44.42
+    },
+    "Machines": {
+      "category": "Technology",
+      "sales": 189238.63,
+      "profit": 3384.76,
+      "quantity": 440,
+      "avg_discount_pct": 30.61,
+      "profit_margin_pct": 1.79
+    },
+    "Fasteners": {
+      "category": "Office Supplies",
+      "sales": 3024.28,
+      "profit": 949.52,
+      "quantity": 914,
+      "avg_discount_pct": 8.2,
+      "profit_margin_pct": 31.4
+    },
+    "Supplies": {
+      "category": "Office Supplies",
+      "sales": 46673.54,
+      "profit": -1189.1,
+      "quantity": 647,
+      "avg_discount_pct": 7.68,
+      "profit_margin_pct": -2.55
+    },
+    "Bookcases": {
+      "category": "Furniture",
+      "sales": 114880.0,
+      "profit": -3472.56,
+      "quantity": 868,
+      "avg_discount_pct": 21.11,
+      "profit_margin_pct": -3.02
+    },
+    "Tables": {
+      "category": "Furniture",
+      "sales": 206965.53,
+      "profit": -17725.48,
+      "quantity": 1241,
+      "avg_discount_pct": 26.13,
+      "profit_margin_pct": -8.56
+    }
+  },
+  "regional_metrics": {
+    "West": {
+      "sales": 725457.82,
+      "profit": 108418.45,
+      "quantity": 12266,
+      "orders": 1611,
+      "profit_margin_pct": 14.94
+    },
+    "East": {
+      "sales": 678499.87,
+      "profit": 91534.84,
+      "quantity": 10616,
+      "orders": 1401,
+      "profit_margin_pct": 13.49
+    },
+    "Central": {
+      "sales": 501239.89,
+      "profit": 39706.36,
+      "quantity": 8780,
+      "orders": 1175,
+      "profit_margin_pct": 7.92
+    },
+    "South": {
+      "sales": 391721.91,
+      "profit": 46749.43,
+      "quantity": 6209,
+      "orders": 822,
+      "profit_margin_pct": 11.93
+    }
+  },
+  "segment_metrics": {
+    "Consumer": {
+      "sales": 1161401.34,
+      "profit": 134119.21,
+      "quantity": 19521,
+      "orders": 2586,
+      "profit_margin_pct": 11.55,
+      "aov": 449.11
+    },
+    "Corporate": {
+      "sales": 706146.37,
+      "profit": 91979.13,
+      "quantity": 11608,
+      "orders": 1514,
+      "profit_margin_pct": 13.03,
+      "aov": 466.41
+    },
+    "Home Office": {
+      "sales": 429371.78,
+      "profit": 60310.74,
+      "quantity": 6742,
+      "orders": 909,
+      "profit_margin_pct": 14.05,
+      "aov": 472.36
+    }
+  },
+  "discount_tier_metrics": {
+    "0% (No Discount)": {
+      "transactions": 4798,
+      "sales": 1087908.47,
+      "profit": 320987.6,
+      "profit_margin_pct": 29.51
+    },
+    "0.01% - 20%": {
+      "transactions": 3803,
+      "sales": 846522.24,
+      "profit": 100785.47,
+      "profit_margin_pct": 11.91
+    },
+    "20.01% - 40%": {
+      "transactions": 459,
+      "sales": 233856.53,
+      "profit": -35805.41,
+      "profit_margin_pct": -15.31
+    },
+    "40.01% - 60%": {
+      "transactions": 215,
+      "sales": 71048.21,
+      "profit": -28944.19,
+      "profit_margin_pct": -40.74
+    },
+    "60.01% - 80%": {
+      "transactions": 718,
+      "sales": 57584.04,
+      "profit": -70614.4,
+      "profit_margin_pct": -122.63
+    }
+  },
+  "monthly_seasonality_share_pct": {
+    "1": 4.13,
+    "2": 2.6,
+    "3": 8.93,
+    "4": 5.99,
+    "5": 6.75,
+    "6": 6.65,
+    "7": 6.41,
+    "8": 6.92,
+    "9": 13.39,
+    "10": 8.72,
+    "11": 15.34,
+    "12": 14.16
+  },
+  "correlations": {
+    "sales_vs_profit": 0.4791,
+    "sales_vs_quantity": 0.2008,
+    "discount_vs_profit": -0.2195,
+    "discount_vs_sales": -0.0282
+  }
+}
