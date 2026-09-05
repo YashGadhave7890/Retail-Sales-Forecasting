@@ -9,6 +9,9 @@
 An end-to-end, interview-defensible Data Science and Machine Learning project that analyzes real commercial retail transactions, diagnoses margin destruction patterns, engineers leakage-free time-series features, benchmarks multiple forecasting algorithms against rigorous baselines, evaluates models using expanding-window backtesting, and delivers an interactive operational dashboard.
 
 ---
+## 🚀 Live Demo
+
+### **[Open the Live Streamlit Dashboard](https://retail-sales-forecasting-yashgadhave.streamlit.app/)**
 
 ## Table of Contents
 1. [Project Overview](#1-project-overview)
