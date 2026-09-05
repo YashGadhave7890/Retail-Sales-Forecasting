@@ -49,8 +49,9 @@ def test_dockerignore_exists_and_excludes_sensitive():
 
 
 def test_required_dashboard_files_exist():
-    """Verify dashboard/app.py and helper modules exist."""
+    """Verify dashboard/app.py, __init__.py, and helper modules exist."""
     assert DASHBOARD_APP_PATH.exists(), "dashboard/app.py missing!"
+    assert (PROJECT_ROOT / "dashboard" / "__init__.py").exists(), "dashboard/__init__.py missing!"
     assert (PROJECT_ROOT / "dashboard" / "data_utils.py").exists(), "dashboard/data_utils.py missing!"
     assert (PROJECT_ROOT / "dashboard" / "README.md").exists(), "dashboard/README.md missing!"
 

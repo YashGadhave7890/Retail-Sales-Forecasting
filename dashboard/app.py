@@ -4,7 +4,15 @@ Retail Sales Forecasting & Analytics — Interactive Streamlit Dashboard.
 Provides executive analytics, slice-and-dice sales filtering, recursive multi-step
 demand forecasting, historical model benchmarking, and strategic business playbooks.
 """
+import sys
 from pathlib import Path
+
+# Ensure repository root is in sys.path so 'src' and 'dashboard' packages can be imported
+# regardless of working directory or whether executed via streamlit CLI or python -m
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 import json
 import pandas as pd
 import numpy as np
@@ -12,14 +20,24 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from dashboard.data_utils import (
-    load_transaction_data,
-    load_forecasting_features_data,
-    get_cached_model,
-    load_evaluation_reports,
-    compute_executive_kpis,
-    recursive_multistep_forecast
-)
+try:
+    from dashboard.data_utils import (
+        load_transaction_data,
+        load_forecasting_features_data,
+        get_cached_model,
+        load_evaluation_reports,
+        compute_executive_kpis,
+        recursive_multistep_forecast
+    )
+except ImportError:
+    from data_utils import (
+        load_transaction_data,
+        load_forecasting_features_data,
+        get_cached_model,
+        load_evaluation_reports,
+        compute_executive_kpis,
+        recursive_multistep_forecast
+    )
 from src.config import REPORTS_DIR, ASSETS_MODELS_DIR, MODELS_DIR
 
 # ====================================================================

@@ -157,7 +157,7 @@ A strict repository security audit was conducted:
 
 | Symptom | Probable Cause | Corrective Action |
 | :--- | :--- | :--- |
-| `ModuleNotFoundError: No module named 'src'` | Working directory is not project root | Set `PYTHONPATH=.` or run from project root directory |
+| `ModuleNotFoundError: No module named 'src'` | Legacy subfolder execution without package root | Resolved: `dashboard/app.py` self-bootstraps `sys.path` with `PROJECT_ROOT`; launch via `streamlit run dashboard/app.py` |
 | Port 8501 already bound | Another process or container is using 8501 | Run with alternative port: `--server.port=8502` or stop conflicting process |
 | `FileNotFoundError: final_model.joblib` | Production model not trained | Run `python -m src.forecasting` to regenerate model artifacts |
 | Container health check failing | Slow initial dependency compilation | Increase `--start-period=15s` in Docker health check |
